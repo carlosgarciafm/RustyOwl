@@ -1,0 +1,21 @@
+[package]
+name = "rusty_owl"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.tokio]
+features = ["macros"]
+version = "0.2"
+
+[dependencies.serenity]
+default-features = false
+features = [
+    "client",
+    "model",
+    "gateway",
+    "standard_framework",
+    "rustls_tokio_0_2_backend",
+]
+version = "0.10"
